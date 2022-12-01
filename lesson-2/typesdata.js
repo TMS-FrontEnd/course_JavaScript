@@ -25,6 +25,7 @@
   // численное перобразование
     // let age = '25'
     // Number(age) 
+    // parseInt(age)
     // +age 
     // age (/, *, -) 2 
     // age (/, *, -) '2' 
@@ -33,3 +34,8 @@
   // логическое преобразование
     // let n = '', 'Ivan', 0, '', ' ',
     // Boolean(n) или !n
+
+// ВСТРОЕННЫЕ ФУНКЦИИ БРАУЗЕРА
+  // alert('Alert - blocks download');
+  // const booleanValue = confirm('Do you agree with me?') - blocks download  
+  // const string = prompt("Enter your name") - blocks download and returns string
