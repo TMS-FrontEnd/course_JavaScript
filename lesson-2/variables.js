@@ -119,3 +119,12 @@
     // }
 
     // console.log({ a, b, c });
+
+// разница между undefined и not defined
+    // let age
+
+    // console.log(age);
+    // console.log(a);
+
+    const a = Symbol('foo')
+    console.log(a);
