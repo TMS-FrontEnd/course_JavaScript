@@ -3,9 +3,9 @@
 
 // ОБЪЯВЛЕНИЕ И ВЫЗОВ
     // Объявление фунекции (Function Declaration)
-      function имя(параметры) {
-        // тело (код) функции
-      }
+      // function имя(параметры) {
+      //   // тело (код) функции
+      // }
 
     // Выбор имени функции
     /*
@@ -19,6 +19,8 @@
         "check..." - checkProps
         ...
     */
+
+
 
     // Запуск функции
     /*
@@ -82,3 +84,84 @@
 // !!! Сверхкороткие имена функций - не стоит т.к Функции == Комментарии
 // https://learn.javascript.ru/function-expressions
 // https://learn.javascript.ru/arrow-functions-basics
+
+
+// function showRecomendation(age = 5) {
+//   let result = null;
+
+//   if (age >= 18) {
+//     result = 'Можешь все';
+//   } else if (age > 16) {
+//     result = 'Почти все';
+//   } else {
+//     result = 'очень молод'
+//   }
+
+//   console.log({ result });
+// }
+
+// showRecomendation(18);
+// showRecomendation(17);
+// showRecomendation(15);
+// showRecomendation();
+
+
+// пример колбэк функц.
+function calcSum(a,b) {
+  return a + b;
+}
+
+function calcExponentiation(a, b) {
+  return a ** b;
+}
+
+function showResult(fn, a, b) {
+  const result = fn(a, b)
+  console.log({ result });
+}
+
+showResult(calcSum, 5, 5);
+
+// showResult(calcExponentiation, 2, 3)
+
+// function showRecomendation(age = 5) {
+//   let result = null;
+
+//   if (age >= 18) {
+//     result = 'Можешь все';
+//   } else if (age > 16) {
+//     result = 'Почти все';
+//   } else {
+//     result = 'очень молод'
+//   }
+
+//   return result;
+// }
+
+ 
+let v = 0;
+
+function changeVar(x) {
+  v = x;
+}
+
+
+changeVar(10);
+
+console.log({ v });
+
+
+function chacheReturn(x) {
+   let r = x * 2
+   console.log('внутри ', r);
+   return r
+}
+
+const res = chacheReturn(4)
+console.log({ res });
+
+
+const getRequest = () =>  {
+
+}
+
