@@ -1,3 +1,6 @@
+
+// https://learn.javascript.ru/object
+
 // СИНТАКСИС
   //Создание объекта
 
