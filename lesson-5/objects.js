@@ -20,9 +20,9 @@
       "likes javascript": true,
     }
 
-    console.log(userInfo4["likes javascript"]);
-    console.log(userInfo4["name"]);
-    console.log(userInfo4.name);
+    // console.log(userInfo4["likes javascript"]);
+    // console.log(userInfo4["name"]);
+    // console.log(userInfo4.name);
 
   // Вычисляемое или передаваемое имя
   
@@ -35,7 +35,7 @@
 
     let key = "name";
 
-    console.log(userInfo5[key]);
+    // console.log(userInfo5[key]);
 
   // Зарезервированные слова в именах - допускаются  
 
