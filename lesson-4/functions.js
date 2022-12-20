@@ -165,3 +165,50 @@ const getRequest = () =>  {
 
 }
 
+// homework task ADVANCED level #3
+
+const buyPhones = () => {
+  const COST_PHONE = 100;
+  const COST_ACCESSORY = 50;
+  const TAX = 1.2;
+  let currentBalance = +prompt('Какой Ваш баланс на счете ?');
+
+  currentBalance && toCountCostItems();
+  
+  function toCountCostItems() {
+    const selectedPhone = confirm('Хотите купить телефон?');
+    const selectedAccessory = confirm('Хотите купить аксессуар?');
+    let sum = 0;
+
+    if (selectedPhone && selectedAccessory) {
+      sum = (COST_PHONE + COST_ACCESSORY) * TAX;
+    } else if (selectedPhone && !selectedAccessory) {
+      sum = COST_PHONE * TAX;
+    } else if (!selectedPhone && selectedAccessory){
+      sum = COST_ACCESSORY * TAX;
+    } else {
+      alert(`Очень жаль`);
+      return
+    }
+
+    // if (selectedPhone || selectedAccessory) {
+    //   const pricePhone = +selectedPhone && COST_PHONE; // return если false 0, впротивном случаи COST_PHONE
+    //   const priceAccessory = +selectedAccessory && COST_ACCESSORY // return если false 0, впротивном случаи COST_ACCESSORY
+    //   sum = (pricePhone + priceAccessory) * TAX;
+    // } else {
+    //   alert(`Очень жаль`);
+    //   return
+    // }
+
+    if (sum <= currentBalance) {
+      currentBalance -= sum;
+      alert(`Спасибо за покупку! Вы купили на сумму: ${sum}. Ваш баланс составляет ${currentBalance.toFixed(2)}`);
+      toCountCostItems();
+    } else {
+      alert(`Недостаточно средств!!! Сумма покупки: ${sum}, баланс счета: ${currentBalance.toFixed(2)}`)
+      return;
+    }
+  }
+}
+
+// buyPhones()
