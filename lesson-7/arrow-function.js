@@ -20,7 +20,7 @@
 */
 
 // Task: написать функцию declaration: getSum(a, b) ---> сумму чисел 
- 
+
 /*  
   Функции обратного вызова:
     • Функция обратного вызова - это функция, переданная в другую
@@ -35,6 +35,13 @@
   // getSum(a, b) ---> сумму чисел 
   // showCount(fn, x, y) ---> принимает три параметра и выводит в консоль сумму чисел
 
+const numbers = [5, 43, 63, 23, 90];
+
+const newNumbers = numbers.map((el, i) =>{ 
+  return el += 5
+})
+
+console.log({ numbers, newNumbers });
 /*
   Методы массивов:
     • forEach - выполняет функцию callback один раз для каждого
@@ -42,9 +49,11 @@
     не будет вызвана для удалённых или пропущенных элементов
     массива.
 
+  
+
     // Task: const numbers = [5, 43, 63, 23, 90]; ---> добавить каждому элементу значек $
     // Expected result: [5$, 43$, 63$, 23$, 90$]; 
-
+  
     • map - вызывает переданную функцию callback один раз для
     каждого элемента, в порядке их появления и конструирует
     новый массив из результатов её вызова.
@@ -106,8 +115,11 @@
     // Task: 
       // Создать функцию конструктор:
         // new User(name, age, fn);
-        // есть свойства name, age и методы getYearOfBirthday (использовать const currentYear = new Date().getFullYear()), showYearOfBirthday
-        // на верхнем уровне создать функцию showYear() которая будет выводить в консоль год рождения юзера
+        // есть свойства name, age и методы getYearOfBirthday 
+        // (использовать const currentYear = new Date().getFullYear()), 
+        // showYearOfBirthday
+        // на верхнем уровне создать функцию showYear() которая будет 
+        // выводить в консоль год рождения юзера
 
 
 // const showInfo = () => 
@@ -134,5 +146,5 @@
 // user1.showInfo();
 // user2.showInfo();
 
-const currentYear = new Date().getFullYear()
-console.log(currentYear);
+// const currentYear = new Date().getFullYear()
+// console.log(currentYear);
