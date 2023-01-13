@@ -121,11 +121,3 @@ document.write(html)
 После загрузки страницы такой вызов затирает документ. В основном встречается в старых скриптах.
 */
 
-
-// const element1= document.querySelector();	            
-// const elements1= document.querySelectorAll('.item');	        
-// const element2= document.getElementById();          
-// const elements2= document.getElementsByName();	        
-// const elements3= document.getElementsByTagName();	    
-// const elements4= document.getElementsByClassName();	
-

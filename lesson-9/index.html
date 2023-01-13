@@ -5,12 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    header {
+      display: flex;
+      justify-content: center;
+    } 
+    .container {
+      width: 800px;
+      border: 2px solid black;
+      border-radius: 10px 10px;
+      background-color: gray;
+      padding: 15px 25px;
+    } 
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      height: 40px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: aqua;
+      border: 2px solid black;
+      border-radius: 5px 5px;
+    }
+    button:hover {
+      background-color: aquamarine;
+    }
+    input {
+      height: 40px;
+      margin: 0 15px;
+      border: 2px solid black;
+      border-radius: 5px 5px;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
-  <div id="a1" class="item" name="user" data-name="people">1</div>
-  <div id="a2" class="item" name="user" data-name="people">2</div>
-  <div id="a3" class="item-last" name="user" data-name="people">3</div>
-<script src="script.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
