@@ -4,46 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    header {
-      display: flex;
-      justify-content: center;
-    } 
-    .container {
-      width: 800px;
-      border: 2px solid black;
-      border-radius: 10px 10px;
-      background-color: gray;
-      padding: 15px 25px;
-    } 
-    form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    button {
-      height: 40px;
-      font-weight: 600;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: aqua;
-      border: 2px solid black;
-      border-radius: 5px 5px;
-    }
-    button:hover {
-      background-color: aquamarine;
-    }
-    input {
-      height: 40px;
-      margin: 0 15px;
-      border: 2px solid black;
-      border-radius: 5px 5px;
-    }
-  </style>
+  <title>Todo list</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <div class="field">
+      <form class="form" action="">
+        <button class="form_button" id="deleteAll">Delete All</button>
+        <input class="form_input" type="text" placeholder="Enter todo">
+        <button class="form_button" id="add" type="submit">Add</button>
+      </form>
+      <div class="content">
+        <div class="card">
+          <div class="card_left_block">
+            <button class="card_btn_success">&#10003;</button>
+            <p class="card_text">todo text</p>
+          </div>
+          <div class="card_right_block">
+            <button class="card_btn_delete">X</button>
+            <p class="card_date">10/11/23</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
   <script src="./index.js"></script>
 </body>
 </html>
