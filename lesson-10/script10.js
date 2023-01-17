@@ -1,6 +1,3 @@
-const DIV3 = document.querySelector('#DIV-3');
-const body = document.querySelector('body');
-
 // https://developer.mozilla.org/ru/docs/Web/API/Element/classList
 /*
 useful methods of classlist:
@@ -17,12 +14,12 @@ el.classList.contains('name')); //true or false
 Три способа назначения обработчика:
 1 - через атрибут HTML
 2 - DOM свойство onclick у элемента
-
 3 - метод addEventListener
 */
 
 // останавливает всплытие - event.stopPropagation()
 // options - true or false (default === false)
+
 
 // https://learn.javascript.ru/bubbling-and-capturing
 // https://learn.javascript.ru/event-delegation
