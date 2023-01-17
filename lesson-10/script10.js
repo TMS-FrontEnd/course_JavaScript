@@ -34,3 +34,12 @@ event.currentTarget (=this) – элемент, на котором в данн�
 event.eventPhase – на какой фазе он сработал (погружение=1, фаза цели=2, всплытие=3).
 */
 
+
+// https://learn.javascript.ru/focus-blur
+// https://learn.javascript.ru/events-change
+// работа с датами
+/*
+const date = new Date()
+console.log(date.toLocaleDateString());
+*/
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
