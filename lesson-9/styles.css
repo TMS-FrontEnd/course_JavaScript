@@ -6,13 +6,15 @@
   border-radius: 10px 10px;
   margin: 0 auto;
 }  
-button {
+.form_button {
   background-color: #18e7cf;
   color: #5e5e5e;
   border: 2px solid black;
   border-radius: 5px 5px;
   cursor: pointer;
   font-weight: bold;
+  width: 200px;
+  height: 40px;
 }
 button:hover {
   background-color: #108f80;
@@ -32,10 +34,7 @@ button:hover {
   font-size: 20px;
   padding: 0 25px;
 }
-.form_button {
-  width: 200px;
-  height: 40px;
-}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -70,6 +69,7 @@ button:hover {
 .card_btn_delete {
   width: 40px;
   height: 30px;
+  cursor: pointer;
 }
 .card_right_block {
   flex-basis: 10%;
