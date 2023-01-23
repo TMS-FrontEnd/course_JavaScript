@@ -6,7 +6,8 @@
   border-radius: 10px 10px;
   margin: 0 auto;
 }  
-.form_button {
+.form_button,
+button {
   background-color: #18e7cf;
   color: #5e5e5e;
   border: 2px solid black;
