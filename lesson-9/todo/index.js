@@ -50,6 +50,11 @@ const Header = (data) => {
     render($('#app')); // делаем рендер приложения с новыми данными
   });
 
+  deleteBtn.addEventListener('click', e => {
+    localStorage.removeItem('todo'); // удаляем все туду из списка (data)
+    render($('#app')); // делаем рендер приложения с новыми данными
+  })
+
   return form;
 };
 
