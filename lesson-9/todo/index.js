@@ -1,3 +1,5 @@
+import { getTest } from "./test.js"; // новая тема - модули
+
 const $ = (title) => document.querySelector(title); // вспомогательнвя функция для получения элемента из ДОМ
 const element = teg => document.createElement(teg); // вспомогательнвя функция для создяния элемента
 
@@ -160,5 +162,6 @@ const render = (app) => {
 
 // запуск приложения
 render($('#app'));
+getTest()
 
 

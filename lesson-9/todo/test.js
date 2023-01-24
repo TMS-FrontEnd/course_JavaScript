@@ -1,0 +1,1 @@
+export const getTest = () => console.log(12);
